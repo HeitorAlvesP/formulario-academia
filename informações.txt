@@ -1,0 +1,10 @@
+Nome Completo, 
+CPF, 
+Data de Nascimento, 
+E-mail -> deve conter "@" e "."
+Telefone -> mínimo de 10 dígitos
+Endereço, 
+Cidade, 
+Estado, 
+Curso  
+Matrícula -> exatamente 8 dígitos
