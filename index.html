@@ -9,15 +9,36 @@
 </head>
 <body>
     
-    <div class="container">
-        <h1 class="text-center mt-5">Olá, Bootstrap!</h1>
-        <button class="btn btn-primary">Clique aqui</button>
-    </div>
+    <section class="container mt-5">
+        <h1 class="text-center">Formulário de Cadastro</h1>
+    
+        <form id="formCadastro" action="/" method="post" class="formulario">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required>
+                <div id="cpfErro" class="alert alert-danger" style="display:none;">
+                    CPF inválido!
+                </div>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </section>
 
+    <script type="module" src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
 </body>
 </html>
